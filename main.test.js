@@ -1,11 +1,33 @@
-/**********************************
- * YOUR CODE GOES HERE THIS TIME! *
- **********************************/
+let x = 3;
+let y = 10;
+let z = 4;
+let greeting = "hello";
+let firstName = "John";
+let callStatus = "ringing";
 
+function double() {
+  x = x + 3;
+}
 
+function triple() {
+  y = y * 3;
+}
 
+function square() {
+  z = Math.pow(4, 2);
+}
 
- 
+function beNice() {
+  greeting = "hello" + " " + firstName + ".";
+}
+
+function changeName() {
+  firstName = "Danger";
+}
+
+function hangUp() {
+  callStatus = "call ended";
+}
 
 /*********************************************************************************************************************
 
@@ -15,93 +37,94 @@
 
  *********************************************************************************************************************/
 
-if (typeof x === 'undefined') {
+if (typeof x === "undefined") {
   x = undefined;
 }
 
-if (typeof y === 'undefined') {
+if (typeof y === "undefined") {
   y = undefined;
 }
 
-if (typeof z === 'undefined') {
+if (typeof z === "undefined") {
   z = undefined;
 }
 
-if (typeof greeting === 'undefined') {
+if (typeof greeting === "undefined") {
   greeting = undefined;
 }
 
-if (typeof firstName === 'undefined') {
+if (typeof firstName === "undefined") {
   firstName = undefined;
 }
 
-if (typeof callStatus === 'undefined') {
+if (typeof callStatus === "undefined") {
   callStatus = undefined;
 }
 
-if (typeof double === 'undefined') {
+if (typeof double === "undefined") {
   double = undefined;
 }
 
-if (typeof triple === 'undefined') {
+if (typeof triple === "undefined") {
   triple = undefined;
 }
 
-if (typeof square === 'undefined') {
+if (typeof square === "undefined") {
   square = undefined;
 }
 
-if (typeof beNice === 'undefined') {
+if (typeof beNice === "undefined") {
   beNice = undefined;
 }
 
-if (typeof changeName === 'undefined') {
+if (typeof changeName === "undefined") {
   changeName = undefined;
 }
 
-if (typeof hangUp === 'undefined') {
+if (typeof hangUp === "undefined") {
   hangUp = undefined;
 }
 
-
-describe('double', () => {
+describe("double", () => {
   it(`doubles x`, () => {
     double();
     expect(x).toEqual(6);
-  })
+  });
 });
 
-describe('triple', () => {
+describe("triple", () => {
   it(`triples y`, () => {
     triple();
     expect(y).toEqual(30);
-  })
+  });
 });
 
-describe('square', () => {
+describe("square", () => {
   it(`squares the variable z`, () => {
     square();
     expect(z).toBe(16);
-  })
+  });
 });
 
-describe('beNice', () => {
+describe("beNice", () => {
   it(`says hello to the person with the first name in firstName`, () => {
     beNice();
-    expect(greeting.includes('hello') && greeting.includes(firstName)).toBe(true);
-  })
+    expect(greeting.includes("hello") && greeting.includes(firstName)).toBe(
+      true
+    );
+  });
 });
 
-describe('changeName', () => {
+describe("changeName", () => {
   it(`changes the value of firstName to 'Danger'`, () => {
     changeName();
-    expect(firstName).toBe('Danger')
-  })
+    expect(firstName).toBe("Danger");
+  });
 });
-  
-describe('hangUp', () => {
+
+describe("hangUp", () => {
   it(`changes the value of callStatus to be 'call ended'`, () => {
     hangUp();
-    expect(callStatus).toBe('call ended')
-  })
+    expect(callStatus).toBe("call ended");
+  });
 });
